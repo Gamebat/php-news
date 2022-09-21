@@ -1,0 +1,185 @@
+    /* ----------------------------------------------------------
+    :: Template Name: TheGazette - News Magazine HTML5 Template
+    :: Author: Colorlib
+    :: Author URL: https://colorlib.com
+    :: Description: TheGazette is a smart & creative news & magazine template. It's suitable for all news & magazine website.
+    :: Version: 1.0.0
+    :: Created: 17 January 2018
+    :: Last Updated: 17 January 2018
+    ---------------------------------------------------------- */
+
+    /* ============ PLACE YOUR CUSTOM CSS HERE ============ */
+    
+    #my-item{
+        padding: 0.25rem 1.5rem;
+        color:black;
+    }
+    
+    .my-menu{
+        left: 100%;
+        top: 0;
+    }
+
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic);
+*{box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  /* background-color: #1d1d1d; */
+}
+nav {
+    background: #413F3C;
+    width: 100%;
+    margin: auto;
+    text-transform: uppercase;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1107px;
+}
+
+.section_padding_36{
+  padding: 36px 0;
+}
+
+.submenu li a{
+    text-transform: uppercase;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+}
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+  text-transform: uppercase;
+}
+.topmenu > li {
+  float: left;
+  position: relative;
+  border-left: 1px solid black;
+}
+.topmenu > li:first-child {border-left: 0;}
+.topmenu > li > a {  
+  padding: 20px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #FEFDFD;
+  letter-spacing: 2px;
+}
+.topmenu > li > a.active, 
+.submenu a:hover {color: #ddbe86;}
+.topmenu .fa, 
+.submenu .fa {
+  margin-left: 5px;
+  color: inherit;
+}
+.submenu {
+  position: absolute;
+  z-index: 5;
+  min-width: 200px;
+  background: white;
+  border-top: 1px solid #CBCBCC;
+  border-left: 1px solid #CBCBCC;
+  border-right: 1px solid #CBCBCC;
+  visibility: hidden;
+  opacity: 0; 
+  transform-origin: 0% 0%;
+  transform: rotateX(-90deg);
+  transition: .3s linear;  
+}
+.submenu li {position: relative;}
+.submenu li a {
+  color: #282828;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-bottom: 1px solid #CBCBCC;
+}
+.submenu .submenu {
+  position: absolute;
+  left: 100%;
+  top: -1px;
+  transition: .3s linear;
+}
+nav li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+.colios{
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+@media (min-width: 768px){
+  .col-md-4{
+    max-width: 100%;
+  }
+}
+
+#navigation{
+  background-color: white;
+  margin-top: 20px;
+}
+
+.navig{
+  width: 200px;
+}
+
+.rowi{
+  display: flex;
+  flex-direction: row;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.cont{
+  width: 200px; 
+    padding-right: 15px;
+    padding-left: 15px; 
+    margin: 10px;
+    background-color: whitesmoke;
+}
+
+@media (min-width: 768px){
+  .col-md-6{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.section_padding_15 {
+  padding: 15px 0 70px;
+}
+
+
+@media (min-width: 768px){
+  .top-header .col-md-6{
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+#rli{
+  float: right;
+}
+
+.dangerrr{
+  font-size: 20px;
+  color: red;
+  font-weight: 800;
+}
